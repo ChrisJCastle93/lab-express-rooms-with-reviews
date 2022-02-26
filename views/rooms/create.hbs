@@ -1,0 +1,43 @@
+<div class="w-full flex flex-wrap">
+
+  <!-- Register Section -->
+  <div class="w-full md:w-1/2 flex flex-col">
+
+    <div class="flex justify-center w-48 md:justify-start pt-12 md:pl-12 md:-mb-12">
+      <img src="https://pbs.twimg.com/profile_images/1415614375830986754/2dnyeSMt_400x400.jpg" />
+    </div>
+
+    <div class="flex flex-col justify-center md:justify-start my-auto pt-8 md:pt-0 px-8 md:px-24 lg:px-32">
+      <p class="text-center text-3xl">Create a Room.</p>
+
+      <form action="/rooms/new" method="post" class="flex flex-col pt-3 md:pt-8">
+
+        <div class="flex flex-col pt-4">
+          <label for="name" class="text-lg">Name</label>
+          <input value="Room1" name="name" type="text" id="name" placeholder="John Smith" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+        </div>
+
+        <div class="flex flex-col pt-4">
+          <label for="description" class="text-lg">Description</label>
+          <input value="nice room" type="text" name="description" id="description" placeholder="your@email.com" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+        </div>
+
+        <div class="flex flex-col pt-4">
+          <label for="imageURL" class="text-lg">Image URL</label>
+          <input value="picgoeshere" type="text" name="imageURL" id="imageURL" placeholder="Password" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mt-1 leading-tight focus:outline-none focus:shadow-outline" />
+        </div>
+        <input type="submit" value="Register" class="bg-black text-white font-bold text-lg hover:bg-gray-700 p-2 mt-8" />
+      </form>
+
+      <div class="text-center pt-12 pb-12">
+        <p>Already have an account? <a href="/auth/login" class="underline font-semibold">Log in here.</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Image Section -->
+  <div class="w-1/2 shadow-2xl">
+    <img class="object-cover w-full h-screen hidden md:block" src="https://source.unsplash.com/IXUM4cJynP0" alt="Background" />
+  </div>
+</div>
